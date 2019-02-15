@@ -11,6 +11,11 @@
   border: 1px solid rgba(153, 205, 49, 0.5);
   margin: 1rem 0;
   padding: 1rem;
+  transition: 100ms;
+}
+
+.character:hover {
+  border-color: greenyellow;
 }
 
 .character > h3 {
