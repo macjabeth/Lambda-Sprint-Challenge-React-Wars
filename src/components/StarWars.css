@@ -12,11 +12,23 @@
 .character {
   border: 1px solid rgba(153, 205, 49, 0.5);
   margin: 1rem 0;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 
 .character > h3 {
   font-family: 'Black Ops One', cursive;
   font-size: 3rem;
   letter-spacing: .1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.character span:last-child {
+  font-size: .6em;
+  background-color: darkgray;
+  padding: .3em .6em;
+  border-radius: .5em 1em;
+  color: rebeccapurple;
+  opacity: 0.5;
 }
