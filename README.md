@@ -105,7 +105,7 @@ In your solution, it is essential that you follow best practices and produce cle
 
 ## Stretch Problems
 
-- [ ] Build a pagination system that will allow you to load the next page of data
+- [x] Build a pagination system that will allow you to load the next page of data
 
 - Take note on the data that's coming back from the server call in our `getCharacters`
 - console.log() the data coming back from the server.

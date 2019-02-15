@@ -24,9 +24,15 @@
 }
 
 .app {
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
   position: relative;
   padding: 1em;
+}
+
+.app svg {
+  margin-top: 3em;
 }
 
 .header {
@@ -36,4 +42,19 @@
   text-transform: uppercase;
   word-spacing: .3em;
   margin-bottom: 1rem;
+  position: relative;
+}
+
+.header > span {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+}
+
+.header > span.next {
+  right: 2em;
+}
+
+.header > span.prev {
+  left: 2em;
 }
