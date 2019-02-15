@@ -1,0 +1,60 @@
+.stars, .twinkling {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.stars {
+  background: #000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+}
+
+.twinkling{
+  background: transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  animation: move-twink-back 200s linear infinite;
+}
+
+@keyframes move-twink-back {
+  from { background-position: 0 0 }
+  to { background-position: -10000px 5000px }
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  padding: 1em;
+}
+
+.app svg {
+  margin-top: 3em;
+}
+
+.header {
+  font-family: 'Monoton', cursive;
+  font-size: 5rem;
+  text-shadow: 1px 1px 5px #fff;
+  text-transform: uppercase;
+  word-spacing: .3em;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.header > span {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+}
+
+.header > span.next {
+  right: 2em;
+}
+
+.header > span.prev {
+  left: 2em;
+}
