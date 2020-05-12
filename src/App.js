@@ -12,7 +12,7 @@ class App extends Component {
     setTimeout(() => this.getCharacters(), 3000);
   }
 
-  getCharacters = (url = 'https://swapi.co/api/people') => {
+  getCharacters = (url = 'https://swapi.dev/api/people') => {
     fetch(url)
       .then(res => res.json())
       .then(data => {
