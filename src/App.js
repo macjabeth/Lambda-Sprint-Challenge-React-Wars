@@ -12,7 +12,7 @@ class App extends Component {
     setTimeout(() => this.getCharacters(), 3000);
   }
 
-  getCharacters = (url = 'https://swapi.dev/api/people') => {
+  getCharacters = (url = 'https://swapi.dev/api/people/') => {
     fetch(url)
       .then(res => res.json())
       .then(data => {
@@ -38,7 +38,10 @@ class App extends Component {
             <h1>React Wars</h1>
             {next ? <span className="next" onClick={() => this.getCharacters(next)}>&gt;</span> : null}
           </div>
-          {results ? <CharacterList chars={results} /> : <Loader type="Ball-Triangle" color="red" height={80} width={80} />}
+          {results
+            ? <CharacterList chars={results} />
+            : <Loader type="Ball-Triangle" color="red" height={80} width={80} />
+          }
         </div>
       </React.Fragment>
     );
